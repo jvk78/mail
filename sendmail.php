@@ -1,6 +1,7 @@
 <?php
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
+    echo 'Message has been sent';
 
 require 'phpmailer/src/Exception.php';
 require 'phpmailer/src/PHPMailer.php';
@@ -13,20 +14,20 @@ $mail->IsHTML(true);
 
 $mail->setFrom('karev_e@mail.ru', 'Mailer');
 $mail->addAddress('karev_e@mail.ru', 'Joe User');
-
 $mail->Subject = 'Here is the subject';
-$mail->Body    = 'This is the HTML message body <b>in bold!</b>';
-$mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
 
-$mail->send();
-    echo 'Message has been sent';
-} catch (Exception $e) {
-    echo "Message could not be sent. Mailer Error:error";
-}
+$body = '<h1>TEST</h1>';
 
+$mail->Body = $body;
 
+  if(!$mail->send()) {
+    $message = 'error';
+  } else {
+    $message = 'send';
+  }
+$response = ['message' => $message]
 
-
-
+header('Content-type: application/json');
+echo json_encode($response)
 
 ?>
