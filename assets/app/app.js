@@ -8,7 +8,7 @@ async function formsend(e) {
   let formData = new FormData(form)
   formData.append('image', formImage.files[0])
 
-  console.log(response)
+
 
 
   if (error === 0) {
