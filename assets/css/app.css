@@ -1,0 +1,38 @@
+body {
+  height: 100%;
+  background-color: #333;
+}
+.form {
+  max-width: 550px;
+  margin: 0 auto;
+  color: #fff;
+  padding: 30px 0;
+}
+.form__body {
+  
+}
+.form__title {
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+.form__item {
+  margin-bottom: 20px;
+  
+}
+.form__label {
+  font-size: 18px;
+  display: block;
+  margin-bottom: 10px;
+}
+.form__input {
+  height: 50px;
+  width: 100%;
+  padding: 0 20px;
+  border-radius: 5px;
+  font-size: 18px;
+}
+textarea.form__input {
+  min-height: 120px;
+  resize: vertical;
+}

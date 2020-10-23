@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="google" content="notranslate">
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <title>Send Message</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+<!--  <link rel="stylesheet" href="assets/css/app.css">-->
+</head>
+
+<body>
+
+<div class="wrapper">
+  <div class="form">
+    <form action="#" class="form__body" id="form">
+      <h1 class="form__title">Send Message</h1>
+      <div class="form__item">
+        <label for="formName" class="form__label">Name*:</label>
+        <input id="formName" type="text" name="name" class="form__input _req">
+      </div>
+      <div class="form__item">
+        <label for="formMail" class="form__label">E-mail*:</label>
+        <input id="formMail" type="text" name="mail" class="form__input _req _email">
+      </div>
+      <div class="form__item">
+        <div class="form__label">Left-handed or right-handed</div>
+        <div class="options">
+          <div class="option__item">
+            <input id="formRightHanded" class="options__input" type="radio" value="right" name="hand" checked>
+            <label for="formRightHanded" class="options__label"><span>Right-handed</span></label>
+          </div>
+          <div class="option__item">
+            <input id="formLeftHanded" class="options__input" type="radio" value="left" name="hand" >
+            <label for="formLeftHanded" class="options__label"><span>Left-handed</span></label>
+          </div>
+        </div>
+      </div>
+      <div class="form__item">
+        <label for="formMessage" class="form__label">Message</label>
+        <textarea name="message" id="formMessage" class="form__input"></textarea>
+      </div>
+      <div class="form__item">
+        <div class="form__label">Age:</div>
+        <select class="select" name="age" id="">
+          <option value="from 18 to 24">from 18 to 24</option>
+          <option value="from 25 to 45">from 25 to 45</option>
+          <option value="from 45">from 45</option>
+        </select>
+      </div>
+      <div class="form__item">
+        <div class="form__label">Attach photo:</div>
+        <div class="file">
+          <div class="file__item">
+            <input class="file__input" type="file" name="image"  accept=".jpg, .png, .gif" id="formImage">
+            <div class="file__button">Choose Photo</div>
+          </div>
+        </div>
+        <div class="file__preview" id="formPreview"></div>
+      </div>
+      <div class="form__item">
+        <div class="checkbox">
+          <input class="checkbox__input _req" checked type="checkbox" name="agreement" id="formAgreement">
+          <label for="formAgreement" class="checkbox__label"><span>Agree</span></label>
+        </div>
+      </div>
+      <button class="form__button" type="submit">Send</button>
+    </form>
+  </div>
+</div>
+
+
+<script src="assets/app/app.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
